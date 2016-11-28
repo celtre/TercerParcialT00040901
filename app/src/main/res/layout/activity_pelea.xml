@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_pelea"
     android:layout_width="match_parent"
@@ -10,4 +11,77 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.labsoftware13.tercerparcialt00040901.PeleaActivity">
 
+    <TextView
+        android:text="Espere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="119dp"
+        android:layout_marginStart="119dp"
+        android:layout_marginTop="63dp"
+        android:id="@+id/txtNamePokemon1" />
+
+    <TextView
+        android:text="Espere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtNamePokemon1"
+        android:layout_alignLeft="@+id/txtNamePokemon1"
+        android:layout_alignStart="@+id/txtNamePokemon1"
+        android:layout_marginTop="19dp"
+        android:id="@+id/txtVidaPokemon1" />
+
+    <TextView
+        android:text="Espere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtNamePokemon2"
+        android:layout_alignRight="@+id/txtNamePokemon2"
+        android:layout_alignEnd="@+id/txtNamePokemon2"
+        android:layout_marginTop="29dp"
+        android:id="@+id/txtVidaPokemon2" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:id="@+id/imgPokemon1"
+        android:layout_above="@+id/txtVidaPokemon1"
+        android:layout_toRightOf="@+id/txtNamePokemon1"
+        android:layout_toEndOf="@+id/txtNamePokemon1"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:id="@+id/imgPokemon2"
+        android:layout_marginTop="152dp"
+        android:layout_below="@+id/txtVidaPokemon1"
+        android:layout_toLeftOf="@+id/txtVidaPokemon1"
+        android:layout_toStartOf="@+id/txtVidaPokemon1" />
+
+    <Button
+        android:text="SIguiente Turno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtVidaPokemon2"
+        android:layout_alignLeft="@+id/txtVidaPokemon1"
+        android:layout_alignStart="@+id/txtVidaPokemon1"
+        android:layout_marginTop="34dp"
+        android:id="@+id/btnSiguiente"
+        android:onClick="siguienteTurno"/>
+
+    <TextView
+        android:text="Espere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:id="@+id/txtNamePokemon2"
+        android:layout_alignTop="@+id/imgPokemon2"
+        android:layout_toRightOf="@+id/txtVidaPokemon1"
+        android:layout_toEndOf="@+id/txtVidaPokemon1" />
 </RelativeLayout>

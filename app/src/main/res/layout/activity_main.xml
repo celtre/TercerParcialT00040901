@@ -53,7 +53,8 @@
         android:id="@+id/button"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="46dp" />
+        android:layout_marginBottom="46dp"
+        android:onClick="peleaAction" />
 
     <TextView
         android:text="Durante cada turno un pokemon hace un daño aleatoreo"
